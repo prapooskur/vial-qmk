@@ -1,0 +1,40 @@
+{
+    "manufacturer": "prapooskur",
+    "keyboard_name": "big_switch",
+    "maintainer": "prapooskur",
+    "url": "example.com",
+    "usb": {
+        "device_version": "1.0.0",
+        "pid": "0x0E8D",
+        "vid": "0xFEED"
+    },
+    "processor": "RP2040",
+    "bootloader": "rp2040",
+    "features": {
+        "extrakey": true,
+        "encoder": true,
+        "encoder_map": true
+    },
+
+    "matrix_pins": {
+        "direct": [
+            ["GP9", "GP14", "GP8"]
+        ]
+    },
+    "encoder": {
+        "rotary": [
+            {"pin_a": "GP26", "pin_b": "GP15", "resolution": 4},
+            {"pin_a": "GP6", "pin_b": "GP7", "resolution": 4}
+        ]
+    },
+
+    "layouts": {
+        "LAYOUT_bigswitch": {
+            "layout": [
+                {"matrix": [0, 0], "x": 0, "y": 0, "h": 4, "w": 4},
+                {"matrix": [0, 1], "x": 1, "y": 0},
+                {"matrix": [0, 2], "x": 1, "y": 1}
+            ]
+        }
+    }
+}
